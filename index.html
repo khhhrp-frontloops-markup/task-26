@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.scss">
-  <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
-  <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
-  <title>task-00</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.scss" />
+    <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
+    <title>task-26</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="breadcrumbs">
+        <a href="#!" class="breadcrumbs__link">Cart</a>
+        <a href="#!" class="breadcrumbs__link">Customer Information</a>
+        <a href="#!" class="breadcrumbs__link">Shipping Method</a>
+        <a href="#!" class="breadcrumbs__link">Payment Method</a>
+      </nav>
+      <form class="form">
+        <div class="main-block">
+          <h2 class="main-block__title">Payment information</h2>
+          <div class="payment-info">
+            <label class="form-field">
+              <span class="form-field__label">card number</span>
+              <input
+                class="form-field__input"
+                type="text"
+                placeholder="**** **** **** ****"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">card holder</span>
+              <input
+                type="text"
+                class="form-field__input"
+                placeholder="Michael Jordan"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">exp. date</span>
+              <input
+                type="text"
+                class="form-field__input"
+                placeholder="03/19"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">cvc</span>
+              <input type="text" class="form-field__input" placeholder="***" />
+            </label>
+          </div>
+        </div>
+        <div class="main-block">Chocolate bar</div>
+        <div class="main-block">
+          <h2 class="main-block__title">Billing address</h2>
+          <label class="form-radio">
+            <input type="radio" name="address" class="form-radio__btn" />
+            <span class="form-radio__label">Same as the shipping address</span>
+          </label>
+          <label class="form-radio">
+            <input type="radio" name="address" class="form-radio__btn" />
+            <span class="form-radio__label">
+              Use a different billing address
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
