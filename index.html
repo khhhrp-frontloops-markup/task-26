@@ -52,18 +52,36 @@
           </div>
         </div>
         <div class="main-block">Chocolate bar</div>
-        <div class="main-block">
+        <div class="main-block main-block--without-pb">
           <h2 class="main-block__title">Billing address</h2>
-          <label class="form-radio">
-            <input type="radio" name="address" class="form-radio__btn" />
-            <span class="form-radio__label">Same as the shipping address</span>
-          </label>
-          <label class="form-radio">
-            <input type="radio" name="address" class="form-radio__btn" />
-            <span class="form-radio__label">
-              Use a different billing address
-            </span>
-          </label>
+          <div class="billing-info">
+            <label class="form-radio">
+              <input
+                type="radio"
+                name="address"
+                class="form-radio__input visually-hidden"
+              />
+              <span class="form-radio__icon"></span>
+              <span class="form-radio__label"
+                >Same as the shipping address</span
+              >
+            </label>
+            <label class="form-radio">
+              <input
+                type="radio"
+                name="address"
+                class="form-radio__input visually-hidden"
+              />
+              <span class="form-radio__icon"></span>
+              <span class="form-radio__label">
+                Use a different billing address
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="form-action">
+          <button type="button" class="form-action__btn">Return to shipping method</button>
+          <button type="submit" class="form-action__btn">Complete order</button>
         </div>
       </form>
     </div>
