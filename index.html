@@ -51,7 +51,42 @@
             </label>
           </div>
         </div>
-        <div class="main-block">Chocolate bar</div>
+        <div class="main-block main-block--h-fit main-block--first">
+          <div class="order-summary">
+            <div class="order-summary__row">
+              <div class="order-summary__price-block">
+                <div class="order-summary__product">
+                  <div class="order-summary__picture">
+                    <img src="./src/img/order.avif" alt="picture" />
+                    <span class="order-summary__count">2</span>
+                  </div>
+                  <h3 class="order-summary__title">Chocolate bar</h3>
+                </div>
+                <p class="order-summary__price order-summary__price--bold">
+                  $2.49
+                </p>
+              </div>
+            </div>
+            <div class="order-summary__row">
+              <div class="order-summary__price-block">
+                <p class="order-summary__text">Subtotal</p>
+                <p class="order-summary__price">$4.98</p>
+              </div>
+              <div class="order-summary__price-block">
+                <p class="order-summary__text">Shipping</p>
+                <p class="order-summary__price">$3.00</p>
+              </div>
+            </div>
+            <div class="order-summary__row">
+              <div class="order-summary__price-block">
+                <p class="order-summary__text">Total</p>
+                <p class="order-summary__price order-summary__price--bold">
+                  $7.98
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="main-block main-block--without-pb">
           <h2 class="main-block__title">Billing address</h2>
           <div class="billing-info">
@@ -80,8 +115,10 @@
           </div>
         </div>
         <div class="form-action">
-          <button type="button" class="form-action__btn">Return to shipping method</button>
-          <button type="submit" class="form-action__btn">Complete order</button>
+          <button type="button" class="form-action__btn">
+            Return to shipping method
+          </button>
+          <button type="submit" class="main-btn">Complete order</button>
         </div>
       </form>
     </div>
